@@ -29,12 +29,6 @@
 			path = DSA;
 			sourceTree = "<group>";
 		};
-		9CEF23D02D87D700002481ED /* Sàng số nguyên tố */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			name = "Sàng số nguyên tố";
-			path = "Sàng số nguyên tố";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +54,6 @@
 		9C71FA8C2D8730A000CE7088 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CEF23D02D87D700002481ED /* Sàng số nguyên tố */,
 				9C71FA8B2D8730A000CE7088 /* DSA */,
 			);
 			name = Products;
