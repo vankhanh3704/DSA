@@ -20,12 +20,19 @@
 
 /* Begin PBXFileReference section */
 		9C71FA8B2D8730A000CE7088 /* DSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CEF23C92D87D5A5002481ED /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9C71FA8D2D8730A000CE7088 /* DSA */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DSA;
+			sourceTree = "<group>";
+		};
+		9CEF23D02D87D700002481ED /* Sàng số nguyên tố */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = "Sàng số nguyên tố";
+			path = "Sàng số nguyên tố";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -46,12 +53,14 @@
 			children = (
 				9C71FA8D2D8730A000CE7088 /* DSA */,
 				9C71FA8C2D8730A000CE7088 /* Products */,
+				9CEF23C92D87D5A5002481ED /* main.hpp */,
 			);
 			sourceTree = "<group>";
 		};
 		9C71FA8C2D8730A000CE7088 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				9CEF23D02D87D700002481ED /* Sàng số nguyên tố */,
 				9C71FA8B2D8730A000CE7088 /* DSA */,
 			);
 			name = Products;
@@ -93,6 +102,7 @@
 				TargetAttributes = {
 					9C71FA8A2D8730A000CE7088 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -244,16 +254,21 @@
 		9C71FA932D8730A000CE7088 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		9C71FA942D8730A000CE7088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
