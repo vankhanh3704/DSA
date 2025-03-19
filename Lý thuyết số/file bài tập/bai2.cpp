@@ -18,7 +18,8 @@ void sang(int l, int r){
         }
     }
     for(int i = max(2, l); i <= r; i++){
-        if(soNt[i]){
+        // phải dịch
+        if(soNt[i - l]){
             cout << i << " ";
         }
         
