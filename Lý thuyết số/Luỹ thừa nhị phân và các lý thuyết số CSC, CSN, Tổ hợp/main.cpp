@@ -49,23 +49,24 @@ ll binPow2(ll a, ll b){
     return res;
 }
 
+// cách tính tổ hợp chập k của n nCk
+ll nCk(ll n, ll k){
+    int res = 1;
+    // với i bắt đầu từ 0
+    // do nCk = nC(n-k)
+    // nên để giảm số vòng lặp k
+    k = min(k, n - k);
+    for(int i = 0; i < k; i++){
+        res *= (n - i); // thì trên tử
+        res /= (i + 1); // dưới mẫu
+        // để đáp ứng công thức
+    }
+    return res;
+}
+
 
 int main(){
     cout << powMod(1032, 1e6, 10)<<endl; // xem ví dụ ảnh
     cout << binPow(2, 22)<< endl;
-    int n;
-    int k;
-    cin >> n >> k;
-    int a[n];
-    for(int i = 0;i < n; i++) cin >> a[i];
-    int res = 0;
-    // tính đồng dư của 1 mảng tổng
-    // làm bằng cách (lấy dư của 1 số cộng với số tiếp theo) xong lại chia dư tiếp
-    for(int i = 0; i < n; i++){
-        
-        res = res + a[i] % k;
-        res %= k;
-    }
-    cout << res<<endl;
-    
+    cout << nCk(10, 3) << endl;
 }

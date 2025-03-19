@@ -7,7 +7,7 @@ const int maxn = 10000001;
 bool nt[maxn];
 
 
-// ước chung lớn nhất
+// ước chung lớn nhất : dùng giải thuật Euclid
 ll gcd(int a, int b){
     if( b== 0 ) return a;
     return gcd(b, a%b);
